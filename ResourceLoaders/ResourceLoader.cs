@@ -1,4 +1,4 @@
-namespace OmnivoreApi.ResourceHandlers
+namespace OmnivoreApi.ResourceLoaders
 {
     public class ResourceLoader
     {

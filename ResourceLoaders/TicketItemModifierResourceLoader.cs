@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using OmnivoreApi.Resources;
 
-namespace OmnivoreApi.ResourceHandlers
+namespace OmnivoreApi.ResourceLoaders
 {
     public class TicketItemModifierResourceLoader : ResourceLoader
     {

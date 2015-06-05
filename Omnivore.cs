@@ -4,7 +4,7 @@ using System.Security;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using OmnivoreApi.Exceptions;
-using OmnivoreApi.ResourceHandlers;
+using OmnivoreApi.ResourceLoaders;
 using OmnivoreApi.Utils;
 
 namespace OmnivoreApi

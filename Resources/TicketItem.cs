@@ -32,7 +32,7 @@ namespace OmnivoreApi.Resources
         /// The price per unit, in cents
         /// </summary>
         [JsonProperty("price_per_unit")]
-        public string pricePerUnit { get; set; }
+        public int pricePerUnit { get; set; }
 
         /// <summary>
         /// Units ordered
