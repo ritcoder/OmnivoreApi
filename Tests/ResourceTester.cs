@@ -17,7 +17,7 @@ namespace OmnivoreApi.Tests
             this.io = io;
         }
 
-        public async void RunAll()
+        public async Task<Dictionary<string,object>>  RunAll()
         {
             var result = new Dictionary<string, object>();
             //get locations
@@ -31,6 +31,8 @@ namespace OmnivoreApi.Tests
             result["Retrieve Location"] = firstLocation.id == retrieveLocationResult.id;
             //tables
             Log("Get table");
+
+            return result;
         }
 
         private void Log(object value) => WriteLine("{0}", value);
