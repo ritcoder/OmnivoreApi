@@ -78,6 +78,7 @@ namespace OmnivoreApi.Resources
         public List<Payment> payments => embedded?.payments;
         public RevenueCenter revenueCenter => embedded?.revenueCenter;
         public Table table => embedded?.table;
+        public bool closed => closedAt.HasValue;
 
         public class Embedded
         {
