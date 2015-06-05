@@ -26,9 +26,9 @@ Use `ListAsync` to get the array, `RetrieveAsync` to get a single item.
 The others include `OpenAsync`, 'VoidAsync' and `AddAsync`.
 
 ```c#
-var allLocations = await io.locations.ListAsync();
-var oneLocation = await io.locations.RetrieveAsync("--locationId--");
-var menu = await io.menu.GetAsync(oneLocation.id);
+var allLocations = await Omnivore.io.locations.ListAsync();
+var oneLocation = await Omnivore.io.locations.RetrieveAsync("--locationId--");
+var menu = await Omnivore.io.menu.GetAsync(oneLocation.id);
 ```
 
 The same applies to all the other resources
@@ -50,3 +50,4 @@ foreach (var kvp in result) WriteLine("{0} >> {1}", kvp.Key, kvp.Value);
 - Add all tests
 - Add Nuget support
 - Complete and host documentation
+- Do performance testing
