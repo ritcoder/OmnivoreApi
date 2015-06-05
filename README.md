@@ -33,7 +33,7 @@ var menu = await Omnivore.io.menu.GetAsync(oneLocation.id);
 
 The same applies to all the other resources
 
-### Runner Tester
+### Running Tester
 ```c#
 var tester = new OmnivoreApi.Tests.ResourceTester(Omnivore.io);
 var result = await tester.RunAll();
@@ -51,3 +51,4 @@ foreach (var kvp in result) WriteLine("{0} >> {1}", kvp.Key, kvp.Value);
 - Add Nuget support
 - Complete and host documentation
 - Do performance testing
+- Use a library that supports the Hypermedia principles via HAL+JSON.
