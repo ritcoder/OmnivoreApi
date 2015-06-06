@@ -102,7 +102,7 @@ namespace OmnivoreApi.Resources
             /// </summary>
             public string comment { get; set; }
 
-            public List<ItemModifier> modifiers { get; set; }
+            public List<ItemModifier> modifiers { get; set; } = new List<ItemModifier>();
 
             public class ItemModifier
             {
