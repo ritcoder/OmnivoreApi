@@ -1,15 +1,7 @@
 ﻿using System;
 
-namespace OmnivoreApi
+namespace OmnivoreApi.Exceptions
 {
-    namespace Utils
-    {
-    }
-
-    namespace Exceptions
-    {
-    }
-
     public class OmnivoreApiResult<TSuccess, TError>
     {
         public TSuccess success { get; set; }
@@ -17,10 +9,4 @@ namespace OmnivoreApi
         public bool ok => error == null;
         public TimeSpan? duration { get; set; }
     }
-
-
-    namespace Resources
-    {
-    }
-
 }
