@@ -66,11 +66,12 @@ namespace OmnivoreApi.Resources
             [JsonProperty("_embedded")]
             public Store embedded { get; set; }
 
-            public List<MenuItem> items => embedded?.items;
+            public List<MenuItem> items => embedded?.menuItems;
 
             public class Store
             {
-                public List<MenuItem> items { get; set; }
+                [JsonProperty("menu_items")]
+                public List<MenuItem> menuItems { get; set; }
             }
         }
     }
